@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 
-const ListOfUser = () => {
+const ListOfAdmin = () => {
 
     const { data: users = [] } = useQuery({
         queryKey: ['users'],
@@ -43,4 +43,4 @@ const ListOfUser = () => {
     );
 };
 
-export default ListOfUser;
+export default ListOfAdmin;

@@ -8,7 +8,7 @@ const LeftSidebar = () => {
             <aside className='h-screen lg:sticky lg:top-0'>
                 <Dashboard></Dashboard>
             </aside>
-            <main className='mx-auto mt-10'>
+            <main className='mx-auto w-1/2 mt-10'>
                 <Outlet></Outlet>
             </main>
         </div>

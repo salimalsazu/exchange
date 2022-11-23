@@ -5,21 +5,23 @@ const Dashboard = () => {
 
     const user = <>
 
-        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/adduser' >Add User</Link>
-        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/listOfUser' >List of User</Link>
-        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/changerole' >Change Role</Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/listofadmin' >List of Admin</Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/listofbuyers' >List of Buyers</Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/listofsellers' >List of Seller</Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/reporteditems' >Reported Item</Link>
     </>
 
-    const service = <>
-        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/adduser' >Add Product</Link>
-        <Link className=' hover:bg-blue-700 py-1' >List of Seller</Link>
-        <Link className=' hover:bg-blue-700 py-1' >Edit Product</Link>
+    const seller = <>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/addproduct' >Add Product</Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/editproduct'  >Edit Product</Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/myproducts' >My Products</Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/mybuyers' >My Buyers</Link>
     </>
 
-    const client = <>
-        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/adduser' >List of Buyer</Link>
-        <Link className=' hover:bg-blue-700 py-1' >Payment</Link>
-        <Link className=' hover:bg-blue-700 py-1' >Purchase List</Link>
+    const buyer = <>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/myorders' >My Orders</Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/myprofile'> My Profile</ Link>
+        <Link className=' hover:bg-blue-700 py-1' to='/dashboard/wishlist' >WishList</Link>
     </>
 
 
@@ -37,14 +39,14 @@ const Dashboard = () => {
                     <div className="space-y-2">
                         <h2 className="text-2xl font-semibold tracking-widest uppercase ">Seller</h2>
                         <div className="flex flex-col space-y-1">
-                            {service}
+                            {seller}
                         </div>
                     </div>
                     <hr />
                     <div className="space-y-2">
                         <h2 className="text-2xl font-semibold tracking-widest uppercase ">Buyer</h2>
                         <div className="flex flex-col space-y-1">
-                            {client}
+                            {buyer}
                         </div>
                     </div>
 
